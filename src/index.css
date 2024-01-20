@@ -1,0 +1,65 @@
+@import "./style/button.css";
+@import "./style/navitem.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-secondary leading-8 font-primary text-[17px];
+}
+
+.container {
+  @apply max-w-[1440px] mx-auto;
+}
+
+@layer base {
+  h1,
+  h2,
+  h4,
+  h5,
+  h6 {
+    @apply text-primary leading-[120%];
+  }
+  h1 {
+    @apply text-[36px] xl:text-[64px] font-semibold;
+  }
+
+  h2 {
+    @apply text-[30px] xl:text-[44px] font-semibold capitalize tracking-[0.44x];
+  }
+
+  h3 {
+    @apply text-[20px] xl:text-[26px] font-semibold;
+  }
+
+  h4 {
+    @apply text-[20px] xl:text-[26px] font-semibold  capitalize;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-full uppercase tracking-[1.02px] flex items-start justify-center transition-all;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-accent-secondary;
+  }
+
+  .btn-white {
+    @apply bg-accent text-white hover:bg-white/90;
+  }
+
+  .btn-white {
+    @apply bg-transparent text-secondary border-2 border-accent hover:bg-accent hover:border-transparent hover:text-white;
+  }
+
+  .input,
+  .select {
+    @apply w-full rounded-md h-[66px] outline-none border-[#dbdfdf];
+  }
+
+  .section {
+    @apply py-12 xl:py-[150px];
+  }
+}

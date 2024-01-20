@@ -1,0 +1,11 @@
+.btn-outline {
+  @apply px-4 py-1 rounded-full bg-transparent text-secondary border-2 border-accent hover:text-white relative;
+}
+
+.btn-outline::after {
+  @apply content-[''] h-full w-full bg-accent absolute top-0 left-0 scale-x-0 transition-all duration-300 origin-center;
+}
+
+.btn-outline:after:hover {
+  @apply scale-x-100 z-[-1];
+}
