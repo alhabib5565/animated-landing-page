@@ -1,5 +1,6 @@
 import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
+import Service from "./components/service/Service";
 import Start from "./components/star/Start";
 
 const App = () => {
@@ -11,6 +12,8 @@ const App = () => {
       <Hero />
       {/* Start Section */}
       <Start />
+      {/* service section */}
+      <Service />
     </div>
   );
 };

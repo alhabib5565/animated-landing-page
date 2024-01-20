@@ -16,6 +16,9 @@ export default {
       fontFamily: {
         primary: "poppins",
       },
+      backgroundImage: {
+        "bg-service": "./src/assets/img/services/bg.svg",
+      },
     },
   },
   plugins: [],
