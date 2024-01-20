@@ -2,7 +2,7 @@ import { MdOutlineHealthAndSafety } from "react-icons/md";
 
 const Hero = () => {
   return (
-    <div className=" bg-grey pt-16  pb-8 md:pb-0 mt-0 md:-mt-10  z-[-1]">
+    <div className=" bg-grey py-14 md:pb-0 mt-0 md:-mt-10  ">
       <div className="container flex justify-between items-center gap-8 overflow-hidden">
         {/* text section */}
         <div className="w-[90%] md:max-w-[42%] mx-auto text-left md:mx-0 space-y-4">
